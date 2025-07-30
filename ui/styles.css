@@ -99,7 +99,7 @@ body {
   font-weight: 600;
 }
 
-.link-consultar {
+.link-consultar, .link-analise {
   color: #007bff;
   font-size: 14px;
   text-decoration: none;
@@ -107,8 +107,34 @@ body {
   margin-bottom: 8px;
 }
 
-.link-consultar:hover {
+.link-consultar:hover, .link-analise:hover {
   text-decoration: underline;
+}
+
+.cashflow-wrap {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.cashflow-stats {
+  flex: 1;
+}
+.stat-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 2px;
+}
+.stat-value {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.stat-value.entradas {
+  color: #27ae60;
+}
+.stat-value.saidas {
+  color: #e74c3c;
 }
 
 /* Placeholder styling */

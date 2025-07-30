@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Expense Manager – iPhone Mock</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <div class="iphone">
@@ -23,10 +24,19 @@
           <ul id="extratoList" class="mov-list"></ul>
         </section>
 
-        <!-- Section: Entradas e saídas (placeholder) -->
-        <section id="entradasSaidas" class="card placeholder">
+        <!-- Section: Entradas e saídas -->
+        <section id="entradasSaidas" class="card cashflow-section">
           <h2>Entradas e saídas</h2>
-          <p>Em breve…</p>
+          <a href="#" class="link-analise">Analisar movimentações &gt;</a>
+          <div class="cashflow-wrap">
+            <canvas id="cashflowChart" width="180" height="160"></canvas>
+            <div class="cashflow-stats">
+              <p class="stat-label">Entradas</p>
+              <p id="entradasMes" class="stat-value entradas"></p>
+              <p class="stat-label">Saídas</p>
+              <p id="saidasMes" class="stat-value saidas"></p>
+            </div>
+          </div>
         </section>
 
         <!-- Section: Gastos por categoria (placeholder) -->
