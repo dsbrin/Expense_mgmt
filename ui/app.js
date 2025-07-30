@@ -29,7 +29,7 @@ function carregarSaldo() {
 }
 
 function carregarMovimentacoes() {
-  const listEl = document.getElementById("movList");
+  const listEl = document.getElementById("extratoList");
   if (!listEl) return;
   const movPath = "/_Data/Movimentacoes.txt";
   fetch(movPath)
