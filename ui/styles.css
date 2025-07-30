@@ -99,6 +99,18 @@ body {
   font-weight: 600;
 }
 
+.link-consultar {
+  color: #007bff;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.link-consultar:hover {
+  text-decoration: underline;
+}
+
 /* Placeholder styling */
 .placeholder p {
   color: #888;
