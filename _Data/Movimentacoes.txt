@@ -1,0 +1,4 @@
+valor,sinal,tipo
+25.50,-,transacao
+45.80,-,transacao
+5000.00,+,transacao
