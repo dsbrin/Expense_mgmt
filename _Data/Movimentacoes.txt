@@ -1,4 +1,4 @@
-valor,sinal,tipo
-25.50,-,transacao
-45.80,-,transacao
-5000.00,+,transacao
+valor,sinal,tipo,descricao
+25.50,-,transacao,Padaria
+45.80,-,transacao,Uber
+5000.00,+,transacao,Salário
