@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!saldoEl) return;
 
   // Caminho relativo ao HTML (/ui/) para o arquivo saldo
-  const saldoPath = "../_Data/_Outputs/Saldo.txt";
+  // Caminho absoluto a partir da raiz do site. Certifique-se de que a pasta _Data esteja incluída no deploy.
+  const saldoPath = "/_Data/_Outputs/Saldo.txt";
 
   fetch(saldoPath)
     .then((res) => {
