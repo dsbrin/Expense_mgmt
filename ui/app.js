@@ -31,7 +31,7 @@ function carregarSaldo() {
 function carregarMovimentacoes() {
   const listEl = document.getElementById("extratoList");
   if (!listEl) return;
-  const movPath = "/_Data/Movimentacoes.txt";
+  const movPath = "/_Data/_Outputs/Mov_acc_money.txt";
   fetch(movPath)
     .then((res) => {
       if (!res.ok) throw new Error("Não foi possível ler movimentações.");
@@ -44,7 +44,7 @@ function carregarMovimentacoes() {
         const [valor, sinal, tipo, descricao] = l.split(/,(.+)/)[0].split(",");
       });
       linhas.forEach((linha) => {
-        const [valor, sinal, tipo, descricao] = linha.split(",");
+        const [valor, sinal, tipo, descricao, data] = linha.split(",");
         const li = document.createElement("li");
         li.className = "mov-item";
         const descSpan = document.createElement("span");
