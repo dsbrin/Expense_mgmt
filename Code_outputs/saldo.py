@@ -1,7 +1,7 @@
-"""Generate Saldo output file based on _Data/Raw_Expenses.csv.
+"""Generate Saldo output file based on _Data/_Raw/Input_Saldo.csv.
 
 This script reads the raw expenses file, extracts the balance (saldo) value
-and writes it unchanged to `_Data/Saldo.txt`. The resulting plain-text file
+and writes it unchanged to `_Data/_Outputs/Saldo.txt`. The resulting plain-text file
 can then be consumed by the Vercel UI layer.
 """
 from pathlib import Path
@@ -9,8 +9,8 @@ from pathlib import Path
 # Resolve relevant paths
 BASE_DIR = Path(__file__).resolve().parent.parent  # project root
 DATA_DIR = BASE_DIR / "_Data"
-RAW_EXPENSES_PATH = DATA_DIR / "Raw_Expenses.csv"
-OUTPUT_PATH = DATA_DIR / "Saldo.txt"
+RAW_EXPENSES_PATH = DATA_DIR / "_Raw" / "Input_Saldo.csv"
+OUTPUT_PATH = DATA_DIR / "_Outputs" / "Saldo.txt"
 
 
 def main() -> None:
@@ -25,7 +25,7 @@ def main() -> None:
     # Expect at least two lines: header ('Saldo') and the numeric value
     if len(lines) < 2:
         raise ValueError(
-            "Raw_Expenses.csv deve conter duas linhas: cabecalho e valor do saldo"
+            "Input_Saldo.csv deve conter duas linhas: cabecalho e valor do saldo"
         )
 
     balance_str = lines[1]  # Keep the original formatting unchanged
