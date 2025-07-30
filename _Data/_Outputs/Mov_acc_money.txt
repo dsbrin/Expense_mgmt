@@ -1,0 +1,4 @@
+valor,sinal,tipo,descricao,data
+758.71,-,Saída,Pagamento Médico,2025-06-27
+157.72,-,Saída,Pagamento Academia,2025-06-26
+700.73,-,Saída,Transferência para amigo,2025-06-25
