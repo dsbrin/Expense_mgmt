@@ -77,6 +77,28 @@ body {
   color: #27ae60; /* green */
 }
 
+/* Movimentações list */
+.mov-list {
+  list-style: none;
+}
+.mov-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.mov-item:last-child {
+  border-bottom: none;
+}
+.mov-desc {
+  font-size: 14px;
+  color: #333;
+}
+.mov-valor {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 /* Placeholder styling */
 .placeholder p {
   color: #888;
