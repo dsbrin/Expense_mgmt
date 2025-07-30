@@ -1,0 +1,6 @@
+tipo,data,descricao,valor,categoria
+saldo,, ,9535.26,
+transacao,2025-07-01,Padaria,-25.50,Comida e bebida
+transacao,2025-07-01,Uber,-45.80,Transporte
+transacao,2025-07-02,Salário,5000.00,Receita
+transacao,2025-07-03,Gasolina,-75.10,Transporte
